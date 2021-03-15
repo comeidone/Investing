@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #define the ticker symbol
-tickerSymbol = 'HER.MI'
+tickerSymbol = 'PIRC.MI'
 
 #get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
@@ -12,7 +12,7 @@ tickerData = yf.Ticker(tickerSymbol)
 tickerDf = tickerData.history(period='max',interval='1wk')
 
 #see your data
-tickerDf['Close'].plot(title="HER.MI's stock price")
+tickerDf['Close'].plot(title="PIRC's stock price")
 plt.show()
 
 #write file
